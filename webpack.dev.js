@@ -4,9 +4,8 @@ const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'development',
-  entry: './src/index.js',
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 });
