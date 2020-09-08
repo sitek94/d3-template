@@ -4,7 +4,7 @@
   "description": "Basic template that uses webpack to bundle html, scss and js",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "author": "Maciek Sitkowski",
   "license": "ISC",
