@@ -10,7 +10,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html'
-    })
+    }),
+
   ],
   module: {
     rules: [
@@ -21,6 +22,20 @@ module.exports = {
           'css-loader',   // 2. Css to commonJS
           'sass-loader'   // 1. Convert sass to css
         ]
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader']
+      },
+      {
+        test: /.(jpg|gif|png|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name]-[hash].[ext]',
+            outputPath: 'img'
+          }
+        }
       }
     ]
   }
