@@ -1,0 +1,15 @@
+{
+  "name": "d3-template",
+  "version": "1.0.0",
+  "description": "Basic template that uses webpack to bundle html, scss and js",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "Maciek Sitkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
