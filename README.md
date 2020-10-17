@@ -9,3 +9,4 @@ A template for data visualization projects with d3.
 * sass
 * cache busting
 * minified html, css and js
+* babel transpilation to ES5 (including D3!)
